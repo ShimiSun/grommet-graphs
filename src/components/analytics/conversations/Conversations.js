@@ -12,7 +12,12 @@ const Circle = ({ size, color, alignSelf, ...rest }) => (
 
 export const Coversations = () => (
   <Tile title="Coversations by Source" width={{ min: 'minConversations' }}>
-    <Box direction="row" pad="xsmall" alignSelf="center" align="center">
+    <Box
+      direction="row"
+      pad={{ horizontal: 'small', vertical: 'medium' }}
+      alignSelf="center"
+      align="center"
+    >
       <Box gap="xsmall">
         <Circle size="xsmall" color="brand" />
         <Box direction="row" gap="xsmall">
@@ -21,7 +26,7 @@ export const Coversations = () => (
         </Box>
       </Box>
       <Box>
-        <Circle size="xsmall" color="white" />
+        {/* <Circle size="xsmall" color="white" /> */}
         <Circle size="xxsmallToxsmall" color="accent-3" />
         <Circle size="xxxsmall" color="neutral-3" />
         <Circle size="small" color="accent-4" />
