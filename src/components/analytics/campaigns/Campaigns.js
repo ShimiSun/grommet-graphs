@@ -13,6 +13,7 @@ export const Campaigns = () => {
     <Tile title="Campaigns" width={{ min: 'middle' }}>
       <Score />
       <CampaignDiagram />
+      <Box flex />
       <Box tag="footer" align="end" flex={false}>
         <AddButton />
       </Box>
