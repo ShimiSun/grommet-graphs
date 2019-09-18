@@ -40,11 +40,6 @@
     "react/jsx-wrap-multilines": 0,
     "no-useless-concat": 0,
     "react/jsx-indent": 0,
-    "react/jsx-props-no-spreading": [
-      {
-        "html": "ignore",
-        "custom": "ignore"
-      }
-    ]
+    "react/jsx-props-no-spreading": 0
   }
 }
