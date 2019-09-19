@@ -7,7 +7,7 @@ import { UserMenu, NotificationAlert } from './index';
 import { GradientGremlin } from './GradientGremlin';
 
 export const Sidebar = () => (
-  <Box width="sidebar" background="brand" overflow="auto">
+  <Box background="brand" overflow="auto">
     <Box align="center" gap="medium" pad={{ vertical: 'small' }}>
       <GradientGremlin />
     </Box>

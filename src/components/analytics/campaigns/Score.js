@@ -4,7 +4,6 @@ import { Box, Text } from 'grommet';
 
 const ScoreItem = ({ number, desc }) => (
   <Box fill align="center">
-    {/* TODO what font are you using? */}
     <Text alignSelf="center" size="xlarge" weight="bold">
       {number}
     </Text>

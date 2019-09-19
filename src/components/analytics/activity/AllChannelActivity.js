@@ -33,7 +33,7 @@ sample4.map(point =>
 values = [values1, values2, values3, values4];
 
 export const AllChannelActivity = () => (
-  <Tile title="All Channel Activity" width="large">
+  <Tile title="All Channel Activity">
     <Box flex />
     <ActivityChart values={values} />
     <Box
@@ -42,6 +42,7 @@ export const AllChannelActivity = () => (
       pad="small"
       round={{ size: 'small', corner: 'bottom' }}
     >
+      {/* Footer */}
       <Box align="center" justify="between" direction="row">
         <Text size="xsmall" color="brand">
           120 conversations

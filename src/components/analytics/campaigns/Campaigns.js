@@ -10,7 +10,7 @@ import { Score } from './Score';
 
 export const Campaigns = () => {
   return (
-    <Tile title="Campaigns" width={{ min: 'middle' }}>
+    <Tile title="Campaigns">
       <Score />
       <CampaignDiagram />
       <Box flex />

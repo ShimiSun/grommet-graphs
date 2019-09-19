@@ -7,7 +7,7 @@ import { Legend } from '../legend/Legend';
 import { data as items } from '../legend/data';
 
 export const GeographyByClient = () => (
-  <Tile title="Geography by Client" width="large" overflow="hidden">
+  <Tile title="Geography by Client">
     <Stack>
       <Box>
         <WorldMap color="light-4" places={places} />

@@ -11,7 +11,7 @@ const Circle = ({ size, color, alignSelf, ...rest }) => (
 );
 
 export const Coversations = () => (
-  <Tile title="Coversations by Source" width={{ min: 'minConversations' }}>
+  <Tile title="Coversations by Source">
     <Box
       direction="row"
       pad={{ horizontal: 'small', vertical: 'medium' }}

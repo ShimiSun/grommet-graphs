@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-import { Box, Meter, Text, Stack } from 'grommet';
+import { Box, Meter, ResponsiveContext, Stack, Text } from 'grommet';
 import { Tile } from '../../Tile';
 import { Legend } from '../legend/Legend';
 import { data } from '../legend/data';
 
 export const Budget = () => {
+  const responsiveSize = useContext(ResponsiveContext);
   return (
-    <Tile title="Budget" width={{ min: 'middle' }}>
+    <Tile title="Budget">
       <Text alignSelf="center" size="small">
         Spending by Client
       </Text>
@@ -17,7 +18,12 @@ export const Budget = () => {
           <Text weight="bold" size="xlarge">
             92%
           </Text>
-          <Meter size="meter" thickness="medium" type="circle" values={data} />
+          <Meter
+            size={responsiveSize === 'large' ? 'meterMedium' : 'meter'}
+            thickness={responsiveSize === 'large' ? 'large' : 'medium'}
+            type="circle"
+            values={data}
+          />
         </Stack>
       </Box>
       <Box flex />
