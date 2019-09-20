@@ -37,7 +37,7 @@ export const places = [
   },
   {
     name: 'Hawaii',
-    location: [-19.8968, -155.5828],
+    location: [21.3, -157.5828],
     id: 'hawaii',
     color: 'accent-4',
   },
@@ -55,7 +55,7 @@ export const places = [
   },
   {
     name: 'Lala land',
-    location: [-34.0522, -118.2437],
+    location: [34.0522, -118.2437],
     id: 'la',
     color: 'accent-4',
   },

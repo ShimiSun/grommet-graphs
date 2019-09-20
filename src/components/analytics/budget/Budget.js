@@ -9,13 +9,13 @@ export const Budget = () => {
   const responsiveSize = useContext(ResponsiveContext);
   return (
     <Tile title="Budget">
-      <Text alignSelf="center" size="small">
+      <Text alignSelf="center">
         Spending by Client
       </Text>
       <Box margin="medium">
         {/* Using Stack to place the text in the middle of Meter */}
         <Stack anchor="center" guidingChild="last" alignSelf="center">
-          <Text weight="bold" size="xlarge">
+          <Text weight="bold" size="xxlarge">
             92%
           </Text>
           <Meter

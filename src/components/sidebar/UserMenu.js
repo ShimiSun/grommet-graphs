@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Box, Menu, Text } from 'grommet';
+import { Menu, Text } from 'grommet';
 
-import { Avatar } from './';
+import { Avatar } from './Avatar';
 
 // TODO clean-up
-export const UserMenu = ({ user = {}, items = [], ...rest }) => (
+export const UserMenu = ({ items = [], ...rest }) => (
   <Menu
     dropAlign={{ top: 'bottom', right: 'right' }}
     icon={false}

@@ -6,7 +6,7 @@ import { Box, Chart, calcs, Stack } from 'grommet';
 
 const AnimatedStyledBarChart = styled(Chart)`
   path { 
-    stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 6s linear forwards; 
+    stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 2s linear forwards; 
   },
 `;
 

@@ -43,11 +43,11 @@ export const graphsTheme = {
   // },
   diagram: {
     extend:
-      '@keyframes example { to { stroke-dashoffset: 0; } } path { stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 3s linear forwards; }',
+      '@keyframes example { to { stroke-dashoffset: 0; } } path { stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 2s linear forwards; }',
   },
   meter: {
     color: '#9060EB',
     extend:
-      'path { stroke-dasharray: 900; stroke-dashoffset: 1000; animation: example 5s linear forwards; }',
+      'path { stroke-dasharray: 900; stroke-dashoffset: 1000; animation: example 2s linear forwards; }',
   },
 };

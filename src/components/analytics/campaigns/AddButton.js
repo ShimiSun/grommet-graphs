@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Button } from 'grommet';
 import { Add } from 'grommet-icons';
 
-export const AddButton = () => (
+export const AddButton = ({ ...rest }) => (
   <Box
     round="full"
     background="brand"
@@ -13,6 +13,6 @@ export const AddButton = () => (
     align="center"
     alignContent="center"
   >
-    <Button icon={<Add />} />
+    <Button icon={<Add />} {...rest} />
   </Box>
 );

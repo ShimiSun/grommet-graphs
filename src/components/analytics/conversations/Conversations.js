@@ -7,7 +7,14 @@ import { Legend } from '../legend/Legend';
 import { extendedItems as items } from '../legend/data';
 
 const Circle = ({ size, color, alignSelf, ...rest }) => (
-  <Box width={size} height={size} round="full" background={color} {...rest} />
+  <Box
+    width={size}
+    height={size}
+    round="full"
+    background={color}
+    animation={{ size: 'xlarge', type: 'zoomIn' }}
+    {...rest}
+  />
 );
 
 export const Coversations = () => (
