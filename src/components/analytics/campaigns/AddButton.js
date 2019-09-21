@@ -3,15 +3,13 @@ import React from 'react';
 import { Box, Button } from 'grommet';
 import { Add } from 'grommet-icons';
 
-export const AddButton = ({ ...rest }) => (
+export const AddButton = ({ color, ...rest }) => (
   <Box
     round="full"
-    background="brand"
+    background={color}
     margin={{ bottom: 'small', right: 'small' }}
     width="xxsmall"
     height="xxsmall"
-    align="center"
-    alignContent="center"
   >
     <Button icon={<Add />} {...rest} />
   </Box>

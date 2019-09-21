@@ -11,11 +11,11 @@ const ScoreItem = ({ number, desc }) => (
   </Box>
 );
 
-export const Score = () => (
+export const Score = ({ campaignsNumber }) => (
   <Box direction="row" gap="medium">
     <ScoreItem number={4} desc="Clients" />
     <ScoreItem number={3} desc="Channels" />
-    <ScoreItem number={8} desc="Campaigns" />
+    <ScoreItem number={campaignsNumber} desc="Campaigns" />
     <ScoreItem number={2} desc="Profiles" />
   </Box>
 );
