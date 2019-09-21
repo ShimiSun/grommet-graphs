@@ -1,10 +1,17 @@
 import React from 'react';
 
-import { Box, Button, Text } from 'grommet';
+import { Box, Button, Heading } from 'grommet';
 import { More } from 'grommet-icons';
 
 export const Tile = ({ children, title, ...rest }) => (
-  <Box elevation="medium" fill round="small" overflow="auto" {...rest}>
+  <Box
+    elevation="medium"
+    fill="vertical"
+    round="small"
+    overflow="auto"
+    margin="small"
+    {...rest}
+  >
     <Box
       tag="header"
       pad={{ horizontal: 'small', top: 'small', bottom: 'medium' }}
@@ -12,10 +19,10 @@ export const Tile = ({ children, title, ...rest }) => (
       justify="between"
       align="center"
     >
-      <Text size="small" weight="bold" color="black">
+      <Heading level={3} size="xsmall" margin="none">
         {title}
-      </Text>
-      <Button icon={<More size="small" color="brand" />} />
+      </Heading>
+      <Button icon={<More color="control" />} />
     </Box>
     {children}
   </Box>
