@@ -32,8 +32,8 @@ sample4.map(point =>
 
 values = [values1, values2, values3, values4];
 
-export const AllChannelActivity = () => (
-  <Tile title="All Channel Activity">
+export const AllChannelActivity = ({...rest}) => (
+  <Tile title="All Channel Activity" {...rest}>
     <Box flex />
     <ActivityChart values={values} />
     <Box

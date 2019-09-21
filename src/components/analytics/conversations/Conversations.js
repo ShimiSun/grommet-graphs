@@ -17,8 +17,8 @@ const Circle = ({ size, color, alignSelf, ...rest }) => (
   />
 );
 
-export const Coversations = () => (
-  <Tile title="Coversations by Source">
+export const Coversations = ({...rest}) => (
+  <Tile title="Coversations by Source" {...rest}>
     <Box
       direction="row"
       pad={{ horizontal: 'small', vertical: 'medium' }}

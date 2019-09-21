@@ -7,7 +7,7 @@ import { Score } from './Score';
 
 const initialCampaigns = 8;
 
-export const Campaigns = () => {
+export const Campaigns = ({ ...rest }) => {
   const [campaignsNumber, setCampaignsNumber] = useState(8);
 
   const onChangeCampaigns = value => {
@@ -16,7 +16,7 @@ export const Campaigns = () => {
   };
 
   return (
-    <Tile title="Campaigns">
+    <Tile title="Campaigns" {...rest}>
       <Score mergeState={onChangeCampaigns} campaignsNumber={campaignsNumber} />
       <CampaignDiagram onChangeCampaigns={onChangeCampaigns} />
     </Tile>

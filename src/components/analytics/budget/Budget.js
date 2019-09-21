@@ -5,13 +5,11 @@ import { Tile } from '../../Tile';
 import { Legend } from '../legend/Legend';
 import { data } from '../legend/data';
 
-export const Budget = () => {
+export const Budget = ({ ...rest }) => {
   const responsiveSize = useContext(ResponsiveContext);
   return (
-    <Tile title="Budget">
-      <Text alignSelf="center">
-        Spending by Client
-      </Text>
+    <Tile title="Budget" {...rest}>
+      <Text alignSelf="center">Spending by Client</Text>
       <Box margin="medium">
         {/* Using Stack to place the text in the middle of Meter */}
         <Stack anchor="center" guidingChild="last" alignSelf="center">
