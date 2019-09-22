@@ -1,7 +1,8 @@
+// brand
 export const sample3 = [
   {
     time: 250,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 500,
@@ -65,6 +66,6 @@ export const sample3 = [
   },
   {
     time: 4000,
-    moving_average: 40,
+    moving_average: 41,
   },
 ];

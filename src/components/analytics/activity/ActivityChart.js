@@ -10,6 +10,8 @@ const AnimatedStyledBarChart = styled(Chart)`
   },
 `;
 
+const chartSize = { width: 'large', height: 'medium' };
+
 class ActivityChart extends Component {
   // eslint-disable-next-line react/state-in-constructor
   state = {};
@@ -24,14 +26,14 @@ class ActivityChart extends Component {
     const { bounds } = this.state;
     const { values } = this.props;
     const barChart = {
-      size: { width: 'large', height: 'medium' },
+      size: chartSize,
       bounds,
       type: 'bar',
     };
     const lineChart = {
-      size: { width: 'large', height: 'medium' },
+      size: chartSize,
       bounds,
-      thickness: 'xxsmall',
+      thickness: 'xsmall',
       round: true,
       type: 'line',
     };

@@ -1,7 +1,7 @@
 export const sample4 = [
   {
     time: 250,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 500,

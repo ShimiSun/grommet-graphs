@@ -1,23 +1,24 @@
+// accent-2
 export const sample2 = [
   {
     time: 250,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 500,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 750,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 1000,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 1250,
-    moving_average: 40,
+    moving_average: 41,
   },
   {
     time: 1500,

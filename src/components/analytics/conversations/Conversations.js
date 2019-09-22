@@ -17,7 +17,7 @@ const Circle = ({ size, color, alignSelf, ...rest }) => (
   />
 );
 
-export const Coversations = ({...rest}) => (
+export const Coversations = ({ ...rest }) => (
   <Tile title="Coversations by Source" {...rest}>
     <Box
       direction="row"
@@ -33,7 +33,6 @@ export const Coversations = ({...rest}) => (
         </Box>
       </Box>
       <Box>
-        {/* <Circle size="xsmall" color="white" /> */}
         <Circle size="xxsmallToxsmall" color="accent-3" />
         <Circle size="xxxsmall" color="neutral-3" />
         <Circle size="small" color="accent-4" />
