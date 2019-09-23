@@ -9,7 +9,7 @@ export const Tile = ({ children, title, ...rest }) => (
     fill="vertical"
     round="small"
     overflow="auto"
-    margin="xsmall"
+    margin="small"
     {...rest}
   >
     <Box

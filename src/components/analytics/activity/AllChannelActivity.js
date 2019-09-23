@@ -1,29 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Box, Button, Text } from 'grommet';
 import { Refresh } from 'grommet-icons';
 
 import { Tile } from '../../Tile';
-import { processsData } from './data/processData';
+import { processData } from './data/processData';
 import { ActivityChart } from './ActivityChart';
 
-export const AllChannelActivity = ({ ...rest }) => (
-  <Tile title="All Channel Activity" {...rest}>
-    <Box flex />
-    <ActivityChart values={processsData} />
-    <Box
-      tag="footer"
-      background="light-4"
-      pad="small"
-      round={{ size: 'small', corner: 'bottom' }}
-    >
-      {/* Footer */}
-      <Box align="center" justify="between" direction="row">
-        <Text size="xsmall" color="brand">
-          120 conversations
-        </Text>
-        <Button icon={Refresh} label={<Text size="small">Refresh Feed</Text>} />
+const shuffelValues = () => processData(true);
+
+export const AllChannelActivity = ({ ...rest }) => {
+  const [count, setCount] = useState(120);
+
+  const onRefreshFeedClick = () => {
+    setCount(count + 1);
+  };
+  return (
+    <Tile title="All Channel Activity" {...rest}>
+      <Box flex />
+      <ActivityChart values={shuffelValues()} />
+      <Box
+        tag="footer"
+        background="light-4"
+        pad="small"
+        round={{ size: 'small', corner: 'bottom' }}
+      >
+        {/* Footer */}
+        <Box
+          align="center"
+          justify="between"
+          direction="row"
+          animation={{ size: 'xlarge', type: 'zoomIn' }}
+        >
+          <Text size="medium" color="brand">
+            {count} conversations
+          </Text>
+          <Button
+            icon={<Refresh />}
+            label={<Text size="small">Refresh Feed</Text>}
+            onClick={onRefreshFeedClick}
+          />
+        </Box>
       </Box>
-    </Box>
-  </Tile>
-);
+    </Tile>
+  );
+};

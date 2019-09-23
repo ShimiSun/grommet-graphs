@@ -26,4 +26,14 @@ sample4.map(point =>
 
 values = [values1, values2, values3, values4];
 
-export const processsData = values;
+// Quick shuffling example for binding bounds with refresh behavior
+const shuffle = array => {
+  const shuffleArray = array;
+  const temp = array[2];
+  // eslint-disable-next-line prefer-destructuring
+  shuffleArray[2] = array[3];
+  shuffleArray[3] = temp;
+  return shuffleArray;
+};
+
+export const processData = isShuffle => (isShuffle ? shuffle(values) : values);
