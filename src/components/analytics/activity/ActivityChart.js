@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { Box, Chart, calcs, Stack } from 'grommet';
@@ -10,44 +10,37 @@ const AnimatedStyledBarChart = styled(Chart)`
   },
 `;
 
-const chartSize = { width: 'large', height: 'medium' };
+const chartSize = {
+  width: 'large',
+  height: 'medium',
+};
 
-class ActivityChart extends Component {
-  // eslint-disable-next-line react/state-in-constructor
-  state = {};
+const ActivityChart = ({ values }) => {
+  const { bounds } = calcs(values[0], { coarseness: 5, steps: [3, 3] });
+  const barChart = {
+    size: chartSize,
+    bounds,
+    type: 'bar',
+  };
 
-  componentDidMount() {
-    const { values } = this.props;
-    const { bounds } = calcs(values[0], { coarseness: 5, steps: [3, 3] });
-    this.setState({ bounds });
-  }
+  const lineChart = {
+    size: chartSize,
+    bounds,
+    thickness: 'xsmall',
+    round: true,
+    type: 'line',
+  };
 
-  render() {
-    const { bounds } = this.state;
-    const { values } = this.props;
-    const barChart = {
-      size: chartSize,
-      bounds,
-      type: 'bar',
-    };
-    const lineChart = {
-      size: chartSize,
-      bounds,
-      thickness: 'xsmall',
-      round: true,
-      type: 'line',
-    };
-    return (
-      <Box overflow="auto">
-        <Stack guidingChild="last">
-          <AnimatedStyledBarChart {...barChart} values={values[0]} />
-          <Chart {...lineChart} color="accent-2" values={values[1]} />
-          <Chart {...lineChart} color="brand" values={values[2]} />
-          <Chart {...lineChart} color="neutral-1" values={values[3]} />
-        </Stack>
-      </Box>
-    );
-  }
-}
+  return (
+    <Box overflow="auto" alignSelf="center">
+      <Stack guidingChild="last">
+        <AnimatedStyledBarChart {...barChart} values={values[0]} />
+        <Chart {...lineChart} color="accent-2" values={values[1]} />
+        <Chart {...lineChart} color="brand" values={values[2]} />
+        <Chart {...lineChart} color="neutral-1" values={values[3]} />
+      </Stack>
+    </Box>
+  );
+};
 
 export { ActivityChart };
