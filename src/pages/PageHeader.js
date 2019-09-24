@@ -5,7 +5,7 @@ import { Configure } from 'grommet-icons';
 
 export const PageHeader = ({ name, ...rest }) => (
   <Box
-    margin={{ horizontal: 'large', bottom: 'small' }}
+    margin={{ horizontal: 'medium', bottom: 'small' }}
     justify="between"
     direction="row"
     border={{ side: 'bottom', color: 'light-4' }}

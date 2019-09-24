@@ -22,7 +22,7 @@ export const Analytics = () => {
       <Grid
         fill
         align="center"
-        gap={{ row: 'small' }}
+        gap={{ row: 'medium' }}
         rows={responsiveRows[size]}
         columns={responsiveColumns[size]}
         areas={responsiveAreas[size]}

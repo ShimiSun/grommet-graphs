@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Box, Grid, Grommet, ResponsiveContext } from 'grommet';
-import { Sidebar } from './components/sidebar';
+import { Sidebar } from './components/sidebar/Sidebar';
 import { graphsTheme } from './theme';
 import { Analytics } from './pages/analytics/Analytics';
 
