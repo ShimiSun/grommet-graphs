@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import { Box, Button, Text } from 'grommet';
-import { Refresh } from 'grommet-icons';
 
 import { Tile } from '../../Tile';
 import { processData } from './data/processData';
@@ -36,7 +35,6 @@ export const AllChannelActivity = ({ ...rest }) => {
             {count} conversations
           </Text>
           <Button
-            icon={<Refresh />}
             label={<Text size="small">Refresh Feed</Text>}
             onClick={onRefreshFeedClick}
           />
