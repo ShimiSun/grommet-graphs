@@ -8,9 +8,9 @@
   "private": true,
   "dependencies": {
     "grommet": "^2.7.8",
-    "grommet-icons": "^4.0.1",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
+    "grommet-icons": "^4.3.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-router-dom": "4.3.1",
     "styled-components": "^4.1.1"
   },
@@ -40,6 +40,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --port 3003",
     "build": "webpack --mode production",
+    "lint-fix": "eslint src --fix",
     "prettier": "pretty-quick --staged"
   },
   "pre-commit": [

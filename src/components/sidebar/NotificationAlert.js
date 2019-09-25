@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useRef, useState } from 'react';
 
 import { Stack, Box, Drop, Button } from 'grommet';

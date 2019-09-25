@@ -1,9 +1,7 @@
 import React, { useRef, useState } from 'react';
 
-import { Box, Drop } from 'grommet';
+import { Box, Button, Drop } from 'grommet';
 import { Analytics, Calculator, Stakeholder } from 'grommet-icons';
-
-import RoutedButton from './RoutedButton';
 
 export const TooltipRoutedButton = ({ iconName, index }) => {
   const [over, setOver] = useState();
@@ -16,10 +14,11 @@ export const TooltipRoutedButton = ({ iconName, index }) => {
   return (
     <Box width="100%">
       {/* eslint-disable-next-line jsx-a11y/mouse-events-have-key-events */}
-      <RoutedButton
-        forwardedRef={ref}
+      <Button
+        ref={ref}
         onMouseOver={() => setOver(true)}
         onMouseLeave={() => setOver(false)}
+        fill="horizontal"
         path="/"
         hoverIndicator="accent-1"
         plain
@@ -29,7 +28,7 @@ export const TooltipRoutedButton = ({ iconName, index }) => {
             {iconsMap(hover ? 'black' : 'white')[index]}
           </Box>
         )}
-      </RoutedButton>
+      </Button>
       {ref.current && over && (
         <Drop align={{ left: 'right' }} target={ref.current} plain>
           <Box

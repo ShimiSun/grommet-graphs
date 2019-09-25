@@ -23,9 +23,9 @@ export const App = () => (
             <Box gridArea="main">
               <Switch>
                 <Route path="/" exact component={Analytics} />
-                {/* <Route path="/learn" component={Learn} />
-          <Route path="/inference" component={Inference} /> */}
-                {/* <Route component={NotFound} /> */}
+                {/* The following are placeholders for future pages */}
+                {/* <Route path="/stakeholders" component={Stakeholders} />
+                    <Route path="/calculator" component={Calculator} /> */}
               </Switch>
             </Box>
           </Grid>
