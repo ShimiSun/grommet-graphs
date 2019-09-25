@@ -3,13 +3,14 @@ import React, { useRef, useState } from 'react';
 import { Box, Button, Drop } from 'grommet';
 import { Analytics, Calculator, Stakeholder } from 'grommet-icons';
 
-export const TooltipRoutedButton = ({ iconName, index }) => {
+export const TooltipButton = ({ iconName, index }) => {
   const [over, setOver] = useState();
   const iconsMap = color => [
     <Analytics color={color} />,
     <Stakeholder color={color} />,
     <Calculator color={color} />,
   ];
+  const tooltipColor = { color: 'accent-1', opacity: 0.9 };
   const ref = useRef();
   return (
     <Box width="100%">
@@ -20,7 +21,7 @@ export const TooltipRoutedButton = ({ iconName, index }) => {
         onMouseLeave={() => setOver(false)}
         fill="horizontal"
         path="/"
-        hoverIndicator="accent-1"
+        hoverIndicator={tooltipColor}
         plain
       >
         {({ hover }) => (
@@ -35,7 +36,7 @@ export const TooltipRoutedButton = ({ iconName, index }) => {
             animation="slideRight"
             margin="xsmall"
             pad="small"
-            background="accent-1"
+            background={tooltipColor}
             round={{ size: 'medium', corner: 'right' }}
           >
             {iconName}

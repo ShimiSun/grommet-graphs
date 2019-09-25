@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import { Box, ResponsiveContext } from 'grommet';
 
-import { TooltipRoutedButton } from './TooltipRoutedButton';
+import { TooltipButton } from './TooltipButton';
 import { UserMenu, NotificationAlert } from './index';
 import { GradientGremlin } from './GradientGremlin';
 
@@ -16,11 +16,7 @@ export const Sidebar = () => {
       </Box>
       <Box align="center" gap={size === 'small' ? 'medium' : 'small'}>
         {['Analytics', 'Stakeholder', 'Calculator'].map((iconName, index) => (
-          <TooltipRoutedButton
-            key={iconName}
-            iconName={iconName}
-            index={index}
-          />
+          <TooltipButton key={iconName} iconName={iconName} index={index} />
         ))}
       </Box>
       <Box flex />
