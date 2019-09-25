@@ -17,12 +17,12 @@ export const Analytics = () => {
   const size = useContext(ResponsiveContext);
 
   return (
-    <Box>
+    <Box pad="medium">
       <PageHeader name="Analytics" />
       <Grid
         fill
         align="center"
-        gap={{ row: 'medium' }}
+        gap={{ row: 'medium', column: 'medium' }}
         rows={responsiveRows[size]}
         columns={responsiveColumns[size]}
         areas={responsiveAreas[size]}

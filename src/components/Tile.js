@@ -4,14 +4,7 @@ import { Box, Button, Heading } from 'grommet';
 import { More } from 'grommet-icons';
 
 export const Tile = ({ children, title, ...rest }) => (
-  <Box
-    elevation="medium"
-    fill="vertical"
-    round="small"
-    overflow="auto"
-    margin="small"
-    {...rest}
-  >
+  <Box elevation="medium" fill="vertical" round="small" {...rest}>
     <Box
       tag="header"
       pad={{ horizontal: 'small', top: 'small', bottom: 'medium' }}
