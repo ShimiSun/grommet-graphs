@@ -29,6 +29,7 @@ export const NotificationAlert = () => {
             background="accent-1"
             round={{ corner: 'left' }}
             pad="small"
+            margin={{ vertical: 'large' }}
           >
             New Analytics!
           </Box>
