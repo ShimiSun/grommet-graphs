@@ -36,11 +36,6 @@ export const graphsTheme = {
       xxxsmall: '24px',
     },
   },
-  // chart: {
-  // This applies for all Charts, in my case I was applying it only to Bar Chart using styled-components.
-  //   extend:
-  //     '@keyframes example { to { stroke-dashoffset: 0; } } path { stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 6s linear forwards; }','@keyframes example { to { stroke-dashoffset: 0; } } path { stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 6s linear forwards; }',
-  // },
   diagram: {
     extend:
       '@keyframes example { to { stroke-dashoffset: 0; } } path { stroke-dasharray: 500; stroke-dashoffset: 500; animation: example 2s linear forwards; }',
@@ -48,6 +43,6 @@ export const graphsTheme = {
   meter: {
     color: '#9060EB',
     extend:
-      'path { stroke-dasharray: 900; stroke-dashoffset: 1000; animation: example 2s linear forwards; }',
+      '@keyframes example2 { from { stroke-dashoffset: -400; } to { stroke-dashoffset: 0; } } path { stroke-dasharray: 500; stroke-dashoffset: 1000; animation: example2 1s linear forwards; }',
   },
 };
