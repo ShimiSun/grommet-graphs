@@ -18,7 +18,7 @@ export const GeographyByClient = ({ ...rest }) => {
 
   return (
     <Tile title="Geography by Client" {...rest}>
-      <Box flex overflow="hidden" alignSelf="center">
+      <Box flex="grow" margin="small">
         <Stack fill>
           <WorldMap color="light-4" places={places} />
           {draw && <Diagram connections={connections} />}
