@@ -9,12 +9,12 @@ import { data as items } from '../legend/data';
 export const GeographyByClient = ({ ...rest }) => {
   const reducer = draw => !draw;
 
-  const [draw, toogleDraw] = useReducer(reducer, true);
+  const [draw, toogleDraw] = useReducer(reducer, false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       toogleDraw();
-    }, 2000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [toogleDraw]);
 
@@ -22,7 +22,7 @@ export const GeographyByClient = ({ ...rest }) => {
     <Tile title="Geography by Client" {...rest}>
       <Box flex overflow="hidden" alignSelf="center">
         <Stack fill>
-          <WorldMap color="light-4" places={places} />
+          <WorldMap fill color="light-4" places={places} />
           {draw && <Diagram connections={connections} />}
         </Stack>
       </Box>
