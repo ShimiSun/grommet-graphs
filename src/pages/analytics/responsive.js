@@ -1,9 +1,9 @@
 // import React from 'react';
 
 export const responsiveRows = {
-  small: ['flex', 'medium', 'flex', 'flex', 'flex'],
-  medium: ['flex', 'flex', 'flex'],
-  large: ['flex', 'flex'],
+  small: ['auto', 'auto', 'auto', 'auto', 'auto'],
+  medium: ['auto', 'auto', 'auto'],
+  large: ['auto', 'auto'],
 };
 
 export const responsiveColumns = {

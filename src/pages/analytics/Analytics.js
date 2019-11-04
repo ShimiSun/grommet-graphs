@@ -17,22 +17,23 @@ export const Analytics = () => {
   const size = useContext(ResponsiveContext);
 
   return (
-    <Box pad="medium">
+    <Box flex={false} pad="medium">
       <PageHeader name="Analytics" />
-      <Grid
-        fill
-        align="center"
-        gap={{ row: 'medium', column: 'medium' }}
-        rows={responsiveRows[size]}
-        columns={responsiveColumns[size]}
-        areas={responsiveAreas[size]}
-      >
-        <AllChannelActivity gridArea="allChannelActivity" />
-        <Budget gridArea="budget" />
-        <Campaigns gridArea="campaigns" />
-        <Coversations gridArea="conversations" />
-        <GeographyByClient gridArea="geo" />
-      </Grid>
+      <Box flex={false}>
+        <Grid
+          align="center"
+          gap="medium"
+          rows={responsiveRows[size]}
+          columns={responsiveColumns[size]}
+          areas={responsiveAreas[size]}
+        >
+          <AllChannelActivity gridArea="allChannelActivity" />
+          <Budget gridArea="budget" />
+          <Campaigns gridArea="campaigns" />
+          <Coversations gridArea="conversations" />
+          <GeographyByClient gridArea="geo" />
+        </Grid>
+      </Box>
     </Box>
   );
 };

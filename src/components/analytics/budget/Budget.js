@@ -10,7 +10,7 @@ export const Budget = ({ ...rest }) => {
   return (
     <Tile title="Budget" {...rest}>
       <Text alignSelf="center">Spending by Client</Text>
-      <Box margin="medium">
+      <Box flex margin="medium" align="start">
         {/* Using Stack to place the text in the middle of Meter */}
         <Stack anchor="center" guidingChild="last" alignSelf="center">
           <Text weight="bold" size="xxlarge">
@@ -24,7 +24,6 @@ export const Budget = ({ ...rest }) => {
           />
         </Stack>
       </Box>
-      <Box flex />
       <Legend items={data} />
     </Tile>
   );
