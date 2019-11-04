@@ -12,7 +12,7 @@ const AnimatedStyledBarChart = styled(Chart)`
 
 const chartSize = {
   width: 'large',
-  height: 'small',
+  height: 'medium',
 };
 
 const ActivityChart = ({ values }) => {
@@ -32,7 +32,7 @@ const ActivityChart = ({ values }) => {
   };
 
   return (
-    <Box>
+    <Box alignSelf="center">
       <Stack guidingChild="last">
         <AnimatedStyledBarChart {...barChart} values={values[0]} />
         <Chart {...lineChart} color="accent-2" values={values[1]} />
