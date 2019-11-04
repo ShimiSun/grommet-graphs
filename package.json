@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "grommet": "^2.7.8",
+    "grommet": "^2.7.11",
     "grommet-icons": "^4.3.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
