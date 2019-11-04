@@ -31,7 +31,6 @@ export const graphsTheme = {
       avatar: '45px',
       meter: '180px',
       meterMedium: '260px',
-      // sidebar: '70px',
       xxsmallToxsmall: '64px',
       xxxsmall: '24px',
     },

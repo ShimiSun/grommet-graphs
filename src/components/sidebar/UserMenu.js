@@ -4,7 +4,6 @@ import { Menu, Text } from 'grommet';
 
 import { Avatar } from './Avatar';
 
-// TODO clean-up
 export const UserMenu = ({ items = [], ...rest }) => (
   <Menu
     dropAlign={{ top: 'bottom', right: 'right' }}

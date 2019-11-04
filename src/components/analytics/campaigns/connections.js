@@ -1,4 +1,5 @@
 export const connections = [
+  // initial nodes
   {
     fromTarget: '1',
     toTarget: '2',

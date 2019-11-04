@@ -11,7 +11,6 @@ export const GradientGremlin = () => (
     pad="xsmall"
     round="small"
   >
-    {/* TODO align bottom */}
     <Gremlin color="white" />
   </Box>
 );
