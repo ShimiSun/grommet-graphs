@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useReducer, useEffect } from 'react';
 
 import { Box, Diagram, Stack, WorldMap } from 'grommet';
 import { places, connections } from './data';
@@ -7,14 +7,16 @@ import { Legend } from '../legend/Legend';
 import { data as items } from '../legend/data';
 
 export const GeographyByClient = ({ ...rest }) => {
-  const [draw, setDraw] = useState();
+  const reducer = draw => !draw;
+
+  const [draw, toogleDraw] = useReducer(reducer, true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setDraw(!draw);
-    }, 3500);
-    return () => clearInterval(interval);
-  }, []);
+    const timer = setInterval(() => {
+      toogleDraw();
+    }, 2000);
+    return () => clearInterval(timer);
+  }, [toogleDraw]);
 
   return (
     <Tile title="Geography by Client" {...rest}>
