@@ -10,7 +10,7 @@ Quick Start
 
 npm install
 
-# Serve on localhost:3003
+# Serve on localhost:3000
 
 yarn start
 
@@ -24,3 +24,5 @@ Shimi
 
 Version
 1.0.0
+
+This app is using CRA.
