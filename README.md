@@ -8,7 +8,7 @@ Quick Start
 
 # Install dependencies
 
-npm install
+yarn install
 
 # Serve on localhost:3000
 
