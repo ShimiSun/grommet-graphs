@@ -1,7 +1,7 @@
 {
   "name": "labs",
   "version": "1.0.0",
-  "description": "swarm-learning demo",
+  "description": "demo app for graphs and animations",
   "main": "src/index.js",
   "author": "Shimrit (Shimi) Yacobi",
   "license": "MIT",
